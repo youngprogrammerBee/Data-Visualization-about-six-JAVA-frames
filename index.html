@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The six most commonly used JAVA frameworks</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <header>
+        <h1>The Six Most Commonly Used JAVA Frameworks</h1>
+        <div class="showTime"></div>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000); //开始运行
+            function time() {
+              clearTimeout(t); //清除定时器
+              dt = new Date();
+              var y = dt.getFullYear();
+              var mt = dt.getMonth() + 1;
+              var day = dt.getDate();
+              var h = dt.getHours(); //获取时
+              var m = dt.getMinutes(); //获取分
+              var s = dt.getSeconds(); //获取秒
+              document.querySelector(".showTime").innerHTML =
+                "Current Time: " + y +"/" + mt +"/" +day +"/ " +h +":" +
+                m +":" +s+"";
+              t = setTimeout(time, 1000); //设定定时器，循环运行
+            }
+          </script>
+    </header>
+    <section class="mainbox">
+        <!-- 左边盒子 -->
+        <div class="column">
+            <div class="panel bar">
+                <h2>Aver-Forks</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+            <div class="panel line">
+                <h2>Aver-Stars</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+            <div class="panel pie">
+                <h2>Aver-Follower</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+        </div>
+        <!-- 中间盒子 -->
+        <div class="column">
+        <!-- no模块 -->
+        <div class="no">
+            <div class="no-hd">
+            <ul>
+                <li>139796</li>
+                <li>211804</li>
+            </ul>
+        </div>
+            <div class="no-bd">
+                <ul>
+                    <li>All Forks</li>
+                    <li>All Stars</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 地图模块 -->
+        <div class="map">
+            <div class="map1"></div>
+            <div class="map2"></div>
+            <div class="map3"></div>
+            <div class="chart">地图模块</div>
+        </div>
+        </div>
+        <!-- 右边盒子 -->
+        <div class="column">
+            <div class="panel bar2">
+                <h2>Has-Wiki</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+            <div class="panel line2">
+                <h2>Aver-MaintenanceTime</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+            <div class="panel pie2">
+                <h2>Aver-Update a Day</h2>   
+                <div class="chart">图表</div>
+                <div class="panel_footer"></div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.js"></script>
+     <script src="js/world.js"></script>
+    <!-- <script src="js/echarts.min.js"></script> -->
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="3.1.1/layer.js"></script>
+   
+    
+</body> 
+</html>
